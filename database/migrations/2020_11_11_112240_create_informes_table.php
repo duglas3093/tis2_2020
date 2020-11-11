@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFacultadsTable extends Migration
+class CreateInformesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,9 +12,8 @@ class CreateFacultadsTable extends Migration
      */
     public function up()
     {
-        Schema::create('facultads', function (Blueprint $table) {
-            $table->bigIncrements('facultad_id');
-            $table->string('facultad_name');
+        Schema::create('informes', function (Blueprint $table) {
+            $table->increments('id');
             $table->timestamps();
         });
     }
@@ -26,6 +25,6 @@ class CreateFacultadsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('facultads');
+        Schema::drop('informes');
     }
 }

@@ -15,11 +15,11 @@ class CreateRolsTable extends Migration
         Schema::create('rols', function (Blueprint $table) {
             $table->bigIncrements('rol_id');
             $table->string('rol_name');
-            $table->string('rol_desciption');
+            $table->string('rol_description');
             $table->timestamps();
         });
     }
-
+    
     /**
      * Reverse the migrations.
      *

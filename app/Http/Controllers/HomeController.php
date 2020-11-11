@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
-
+use App\Auth; //modelo user
+use App\Facultad; //modelo user
+use App\Rol; //modelo user
 class HomeController extends Controller
 {
     /**
@@ -30,4 +32,12 @@ class HomeController extends Controller
     public function home(){
         return view('home');
     }
+    // public function add_user_administrativo(){
+    //     $add = 1;
+    //     return view('auth/register', compact('add'));
+    // }
+    // public function add_user_academico(){
+    //     $add = 0;
+    //     return view('auth/register', compact('add'));
+    // }
 }

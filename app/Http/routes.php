@@ -12,7 +12,9 @@
 */
 
 Route::get('/', 'HomeController@home');
-
 Route::auth();
-
+// Route::post('/register', 'Auth/AuthController@create');
 Route::get('/home', 'HomeController@index');
+Route::get('/registeruser_ad','UserController@add_user_administrativo')->name('register_user_administrativo');
+Route::get('/registeruser_aca','UserController@add_user_academico')->name('register_user_academico');
+Route::post('/registerUser','UserController@registrarUsuario')->name('add_user');
