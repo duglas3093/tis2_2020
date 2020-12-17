@@ -8,5 +8,7 @@ use App\Http\Requests;
 
 class InformeController extends Controller
 {
-    //
+    function index(){
+        return view('informes.index');
+    }
 }

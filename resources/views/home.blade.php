@@ -5,8 +5,8 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel ">
-                <h1 class="text-center">Bienvenido {{ Auth::user()->name }}</h1>
-                <div class="contianer-fluid">
+                {{-- <h1 class="text-center">Bienvenido {{ Auth::user()->name }}</h1> --}}
+                <div class="contianer-fluid mt-5">
                     <div class="row">
                         <div class="col-md-6">
                             <img src="{{ asset('images/umss.png') }}" width="90%" alt="">

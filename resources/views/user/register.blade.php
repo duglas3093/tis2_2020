@@ -21,7 +21,7 @@
                                     @endif
                                     <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }} col-md-6">
                                         <div class="">
-                                            <input placeholder="Nombre" id="name" type="text" class="form-control" name="name" value="{{ old('name') }}">
+                                            <input placeholder="Nombre" id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required>
                                             @if ($errors->has('name'))
                                                 <span class="help-block">
                                                     <strong>{{ $errors->first('name') }}</strong>
@@ -33,7 +33,7 @@
                                     <div class="form-group{{ $errors->has('last_name') ? ' has-error' : '' }}">
             
                                         <div class="col-md-6">
-                                            <input placeholder="Apellido" id="last_name" type="text" class="form-control" name="last_name" value="{{ old('last_name') }}">
+                                            <input placeholder="Apellido" id="last_name" type="text" class="form-control" name="last_name" value="{{ old('last_name') }}" required>
             
                                             @if ($errors->has('last_name'))
                                                 <span class="help-block">
@@ -45,7 +45,7 @@
                                     <div class="form-group{{ $errors->has('user_ci') ? ' has-error' : '' }}">
             
                                         <div class="col-md-6">
-                                            <input placeholder="Carnet de Identidad" id="user_ci" type="number" class="form-control" name="user_ci" value="{{ old('user_ci') }}" min="0">
+                                            <input placeholder="Carnet de Identidad" id="user_ci" type="number" class="form-control" name="user_ci" value="{{ old('user_ci') }}" min="0" required>
             
                                             @if ($errors->has('user_ci'))
                                                 <span class="help-block">
@@ -57,7 +57,7 @@
                                     <div class="form-group{{ $errors->has('user_phone') ? ' has-error' : '' }}">
             
                                         <div class="col-md-6">
-                                            <input placeholder="Número Celular" id="user_phone" type="number" class="form-control" name="user_phone" value="{{ old('user_phone') }}" min="0">
+                                            <input placeholder="Número Celular" id="user_phone" type="number" class="form-control" name="user_phone" value="{{ old('user_phone') }}" min="0" required>
             
                                             @if ($errors->has('user_phone'))
                                                 <span class="help-block">
@@ -68,7 +68,7 @@
                                     </div>
                                     <div class="form-group{{ $errors->has('user_codsis') ? ' has-error' : '' }}">
                                         <div class="col-md-6">
-                                            <input placeholder="Codigo SIS" id="user_codsis" type="number" class="form-control" name="user_codsis" value="{{ old('user_codsis') }}" min="0"> 
+                                            <input placeholder="Codigo SIS" id="user_codsis" type="number" class="form-control" name="user_codsis" value="{{ old('user_codsis') }}" min="0" required> 
             
                                             @if ($errors->has('user_codsis'))
                                                 <span class="help-block">
@@ -102,7 +102,7 @@
                                     </div>
                                     <div class="form-group{{ $errors->has('user_nac') ? ' has-error' : '' }}">
                                         <div class="col-md-6">
-                                            <input placeholder="Fecha de Nacimiento" id="user_nac" type="date" class="form-control" name="user_nac" value="{{ old('user_nac') }}">
+                                            <input placeholder="Fecha de Nacimiento" id="user_nac" type="date" class="form-control" name="user_nac" value="{{ old('user_nac') }}" required>
             
                                             @if ($errors->has('user_nac'))
                                                 <span class="help-block">
@@ -131,7 +131,7 @@
                                     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
             
                                         <div class="col-md-6">
-                                            <input placeholder="Email" id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
+                                            <input placeholder="Email" id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
             
                                             @if ($errors->has('email'))
                                                 <span class="help-block">
@@ -144,7 +144,7 @@
                                     <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
             
                                         <div class="col-md-6">
-                                            <input placeholder="Contraseña" id="password" type="password" class="form-control" name="password">
+                                            <input placeholder="Contraseña" id="password" type="password" class="form-control" name="password" required>
             
                                             @if ($errors->has('password'))
                                                 <span class="help-block">
@@ -157,7 +157,7 @@
                                     <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
             
                                         <div class="col-md-6">
-                                            <input placeholer="Confirmación de contraseña" id="password-confirm" type="password" class="form-control" name="password_confirmation">
+                                            <input placeholer="Confirmación de contraseña" id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
             
                                             @if ($errors->has('password_confirmation'))
                                                 <span class="help-block">
